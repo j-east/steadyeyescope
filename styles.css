@@ -574,11 +574,21 @@ img, svg { display: block; max-width: 100%; }
   body { font-size: 17px; }
 
   .top {
-    grid-template-columns: auto auto;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
     padding: 1.25rem var(--pad);
+    justify-items: center;
+    text-align: center;
   }
-  .top__nav, .top__meta { display: none; }
+  .top__nav {
+    gap: 1.8rem;
+    order: 1;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--rule-soft);
+    width: 100%;
+    justify-content: center;
+  }
+  .top__meta { display: none; }
 
   .hero { padding-top: clamp(3rem, 8vw, 5rem); }
   .hero__title {
